@@ -4,22 +4,22 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[SpAddPersonDetails]
 (
-@FirstName varchar(255),
-@LastName varchar(255),
-@Address varchar(255),
-@PhoneNumber varchar(255),
+@firstName varchar(255),
+@lastName varchar(255),
+@address varchar(255),
+@phoneNumber varchar(255),
 @zip int,
-@City varchar(255),
-@State varchar(255),
-@Email varchar(255),
-@AddressBookName varchar(255),
-@Type varchar(255)
+@city varchar(255),
+@state varchar(255),
+@emailId varchar(255),
+@addressBookName varchar(255),
+@type varchar(255)
 )
 as
 begin
 insert into AddressBook values
 (
-@FirstName,@LastName,@Address,@City,@State,@zip,@PhoneNumber,@Email,@AddressBookName,@Type
+@firstName,@lastName,@address,@city,@state,@zip,@phoneNumber,@emailId,@addressBookName,@type
 )
 end
 GO
